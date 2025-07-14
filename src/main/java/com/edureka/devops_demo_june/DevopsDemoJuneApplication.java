@@ -15,7 +15,7 @@ public class DevopsDemoJuneApplication {
 	
 	@GetMapping("/")
 	public String hello() {
-		return "<h1>Hello There!!! Welcome to my application</h1>";
+		return "<h1>Hello There!!! Welcome to my spring boot application</h1>";
 	}
 
 }
