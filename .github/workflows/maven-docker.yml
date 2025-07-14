@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/spring_boot_app
+      IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/spring-boot-app
       IMAGE_TAG: latest
 
     steps:
@@ -35,11 +35,11 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/spring_boot_app .
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/spring-boot-app .
 
     - name: Push Docker image
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/spring_boot_app
+        docker push ${{ secrets.DOCKER_USERNAME }}/spring-boot-app
 
     - name: Set up Kubeconfig
       run: |
