@@ -1,4 +1,4 @@
-package com.edureka.devops_demo_june;
+package com.tcs.dockerdemospringboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-public class DevopsDemoJuneApplication {
+public class dockerdemospringbootApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DevopsDemoJuneApplication.class, args);
+		SpringApplication.run(dockerdemospringbootApplication.class, args);
 	}
 	
 	@GetMapping("/")
