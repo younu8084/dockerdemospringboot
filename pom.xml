@@ -8,10 +8,10 @@
 		<version>3.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.edureka</groupId>
-	<artifactId>devops-demo-june</artifactId>
+	<groupId>com.tcs</groupId>
+	<artifactId>dockerdemospringboot</artifactId>
 	<version>1.0.0</version>
-	<name>devops-demo-june</name>
+	<name>dockerdemospringboot</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
 	<url/>
