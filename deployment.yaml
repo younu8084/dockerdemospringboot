@@ -1,20 +1,20 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: depl
+  name: deployment
   labels:
-    app: depl
+    app: deployment
   annotations:
     deployment.kubernets.io/revision: '1'
 spec:
   replicas: 3
   selector:
     matchLabels: 
-      app: depl
+      app: deployment
   template:
     metadata:
       labels:
-        app: depl
+        app: deployment
     spec:
       containers:
         - name: my-container
