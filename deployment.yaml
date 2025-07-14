@@ -1,1 +1,25 @@
-
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: depl
+  labels:
+    app: depl
+  annotations:
+    deployment.kubernets.io/revision: '1'
+spec:
+  replicas: 3
+  selector:
+    matchLabels: 
+      app: depl
+  template:
+    metadata:
+      labels:
+        app: depl
+    spec:
+      containers:
+        - name: my-container
+          image: youn8233/spring-boot-app
+          ports:
+            - containerPort: 8080
+        
+      
